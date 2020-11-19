@@ -1,0 +1,83 @@
+> year
+에러: 객체 'year'를 찾을 수 없습니다
+> year <- 2020
+> year
+[1] 2020
+> name <- "R프로그래밍"
+> name
+[1] "R프로그래밍"
+> sports.name <- "football"
+> sports.number <- 11\
+에러: 예상하지 못한 입력입니다. in "sports.number <- 11\"
+> sports.number <- 11
+> sports.time <-90
+> sports
+에러: 객체 'sports'를 찾을 수 없습니다
+> sports.name
+[1] "football"
+> sports.number
+[1] 11
+> sports.time
+[1] 90
+> names <- c("R프로그래밍","파이썬")
+> names <- c("R프로그래밍","파이썬","자바","빅데이터")
+> names
+[1] "R프로그래밍" "파이썬"      "자바"        "빅데이터"   
+> 
+> 
+> is.character(year)
+[1] FALSE
+> result <- is.numeric(year)
+> result
+[1] TRUE
+> is.character(name)
+[1] TRUE
+> is.character(sports.name)
+[1] TRUE
+> value <- c(2,3,4)
+> result <- as.numeric(value) * 3
+> result
+[1]  6  9 12
+> animal <- c("토끼","거북이","토끼","거북이","토끼")
+> Nanimal <- as.factor(animal)
+> table(Nanimal)
+Nanimal
+거북이   토끼 
+     2      3 
+> mode(Nanical)
+Error in mode(Nanical) : 객체 'Nanical'를 찾을 수 없습니다
+> mode(Nanimal\)
+에러: 예상하지 못한 입력입니다. in "mode(Nanimal\"
+> mode(Nanimal)
+[1] "numeric"
+> class(Nanimal)
+[1] "factor"
+> Oanimal <- factor(animal, levels = c("거북이","토끼"), ordered = T)
+> Oanimal
+[1] 토끼   거북이 토끼   거북이 토끼  
+Levels: 거북이 < 토끼
+> par(mfrow = c(1,2))
+> plot(Nanimal)
+> plot(Oanimal)
+> 
+> strptime("30-12-2050", format = ("%d-%m-%Y"))
+[1] "2050-12-30 KST"
+> 
+> setwd("c:/workspace/rwork")
+Error in setwd("c:/workspace/rwork") : 작업디렉토리를 변경할 수 없습니다
+> setwd("d:/workspace/rwork")
+> getwd()
+[1] "d:/workspace/rwork"
+> dir()
+character(0)
+> write.csv(value, "sample.csv")
+> 
+> data <- read.csv("sample.csv", header=F)
+> data
+  V1 V2
+1 NA  x
+2  1  2
+3  2  3
+4  3  4
+> dir()
+[1] "sample.csv"
