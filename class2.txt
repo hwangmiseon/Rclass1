@@ -285,9 +285,3 @@ $c3[[3]]
 [2,] "sun"  "mars"  "neptun"
 [3,] "달"   "venus" "pluto" 
 
-
-> installed.packages("writexl")
-     Package LibPath Version Priority Depends Imports LinkingTo
-     Suggests Enhances License License_is_FOSS
-     License_restricts_use OS_type Archs MD5sum NeedsCompilation
-     Built
